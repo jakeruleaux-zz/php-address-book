@@ -44,5 +44,18 @@
 
    });
 
+   $app->get("/bye", function() use($app) {
+      $deletes = Contact::getAll();
+      $deletes_the_contact = array();
+
+      if (empty($deletes_the_contact) == true) {
+          foreach ($deletes as $delete) {
+              if ($delete->getName() == $_GET['bye']) {
+                  array_pop($deletes_the_contact, $delete);
+              }
+          }
+      }
+       return $app['twig']->render('bye.html.twig', array('delete' => $deletes_the_contact));
+   });
     return $app;
 ?>

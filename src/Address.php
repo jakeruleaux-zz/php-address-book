@@ -78,6 +78,7 @@
         {
             return $_SESSION['list_of_contacts'] = array();
         }
+
     }
 
 
