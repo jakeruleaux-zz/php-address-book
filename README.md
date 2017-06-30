@@ -6,7 +6,7 @@
 
 ## Description
 
-_The Address book allows users to input contact info (name, address, phone number, etc.) into an application that will store and display it. The user may also delete entries if it is necessary._
+The Address book allows users to input contact info (name, address, phone number, etc.) into an application that will store and display it. The user may also delete entries if it is necessary.
 
 ## Setup/Installation Requirements
 
@@ -18,7 +18,7 @@ In Terminal, perform the following steps:
 type 'cd desktop' and press enter
 type 'git clone' then copy the repository link and press enter
 type 'cd address-book' to access the path on your computer
-type 'php -S localhost:8000' to open local server
+type 'php -S localhost:8000' to open local server.
 
 
 
