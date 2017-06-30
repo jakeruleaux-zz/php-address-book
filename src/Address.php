@@ -1,5 +1,5 @@
 <?php
-    class contact
+    class Contact
     {
         private $name;
         private $address;
