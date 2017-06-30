@@ -11,7 +11,7 @@
             $this->name = $contact_name;
             $this->address = $contact_address;
             $this->phone = $contact_phone;
-            $this->email = $contact_email
+            $this->email = $contact_email;
         }
 
         function setName($new_name)
