@@ -8,6 +8,7 @@
         <div class="jumbotron">
         <h1>Your very own Address Book!</h1>
         </div>
+        <h1><em>Contacts</em></h1>
         {% if contacts is not empty %}
             {% for contact in contacts %}
             <ul>
@@ -18,8 +19,9 @@
                 <li>Email: {{contact.getEmail}}</li>
             </ul>
             {% endfor %}
-            {% endif %}
+        {% endif %}
 
+        <h1><em>Enter a new Contact</em></h1>
         <form action="/create" method="post">
             <div class="form-group">
                 <label for="name">First name:</label>
