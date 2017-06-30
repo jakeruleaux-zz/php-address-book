@@ -10,7 +10,7 @@ The Address book allows users to input contact info (name, address, phone number
 
 ## Setup/Installation Requirements
 
-* Open GitHub site on your browser: https://github.com/jakeruleaux/php-address-book
+* Open GitHub site on your browser: https://github.com/jakeruleaux/php-address-book/tree/master
 Select the dropdown (green box) "Clone or download"
 Copy the link for the GitHub repository
 Open Terminal on your computer
