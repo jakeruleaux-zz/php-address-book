@@ -10,13 +10,18 @@ _The Address book allows users to input contact info (name, address, phone numbe
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* Open GitHub site on your browser: https://github.com/jakeruleaux/php-address-book
+Select the dropdown (green box) "Clone or download"
+Copy the link for the GitHub repository
+Open Terminal on your computer
+In Terminal, perform the following steps:
+type 'cd desktop' and press enter
+type 'git clone' then copy the repository link and press enter
+type 'cd address-book' to access the path on your computer
+type 'php -S localhost:8000' to open local server
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+
+
 
 ## Known Bugs
 
