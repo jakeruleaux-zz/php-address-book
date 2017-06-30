@@ -14,7 +14,7 @@
     ));
 
     $app->get("/", function() use ($app) {
-        return $app['twig']->render('address.html.twig', array('address' => Contact::getAll()));
+        return $app['twig']->render('address.html.twig', array('contacts' => Contact::getAll()));
     });
 
     $app->post("/create", function() use ($app) {
