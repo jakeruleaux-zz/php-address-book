@@ -11,11 +11,11 @@
         {% if contacts is not empty %}
             {% for contact in contacts %}
             <ul>
-                <li>{{contact.getName}}</li>
-                <li>{{contact.getLast}}</li>
-                <li>{{contact.getAddress}}</li>
-                <li>{{contact.getPhone}}</li>
-                <li>{{contact.getEmail}}</li>
+                <li>First Name: {{contact.getName}}</li>
+                <li>Last Name: {{contact.getLast}}</li>
+                <li>Address: {{contact.getAddress}}</li>
+                <li>Phone: {{contact.getPhone}}</li>
+                <li>Email: {{contact.getEmail}}</li>
             </ul>
             {% endfor %}
             {% endif %}
