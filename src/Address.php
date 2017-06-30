@@ -2,13 +2,15 @@
     class Contact
     {
         private $name;
+        private $last;
         private $address;
         private $phone;
         private $email;
 
-        function __construct($contact_name, $contact_address, $contact_phone, $contact_email)
+        function __construct($contact_name, $contact_last, $contact_address, $contact_phone, $contact_email)
         {
             $this->name = $contact_name;
+            $this->last = $contact_last;
             $this->address = $contact_address;
             $this->phone = $contact_phone;
             $this->email = $contact_email;
@@ -22,6 +24,16 @@
         function getName()
         {
             return $this->name;
+        }
+
+        function setLast($new_last)
+        {
+            $this->last = $new_last;
+        }
+
+        function getLast()
+        {
+            return $this->last;
         }
 
         function setAddress($new_address)
