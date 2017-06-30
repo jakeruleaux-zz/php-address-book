@@ -10,7 +10,7 @@
 
 #delete-home {
     text-align: center;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 #cover {
@@ -46,6 +46,16 @@
 
 .create-page {
     font-size: 32px;
+    text-align: center;
+
+}
+
+#new-head {
+    text-align: center;
+}
+
+#see {
+    text-align: center;
 }
 
 .form-group {

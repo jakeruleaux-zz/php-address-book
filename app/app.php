@@ -2,13 +2,16 @@
     date_default_timezone_set('America/Los_Angeles');
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/Address.php";
+    use Symfony\Component\Debug\Debug;
+    Debug::enable();
 
     session_start();
+
     if(empty($_SESSION['list_of_contacts'])) {
         $_SESSION['list_of_contacts'] = array();
     }
     $app = new Silex\Application();
-
+$app['debug'] = true;
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
         'twig.path' => __DIR__.'/../views'
     ));
@@ -44,18 +47,5 @@
 
    });
 
-   $app->get("/bye", function() use($app) {
-      $deletes = Contact::getAll();
-      $deletes_the_contact = array();
-
-      if (empty($deletes_the_contact) == true) {
-          foreach ($deletes as $delete) {
-              if ($delete->getName() == $_GET['bye']) {
-                  array_pop($deletes_the_contact, $delete);
-              }
-          }
-      }
-       return $app['twig']->render('bye.html.twig', array('delete' => $deletes_the_contact));
-   });
     return $app;
 ?>
