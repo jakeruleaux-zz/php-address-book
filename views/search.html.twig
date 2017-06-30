@@ -4,7 +4,7 @@
           <link rel="stylesheet" href="/../css/styles.css" type="text/css">
         <title>Find them</title>
     </head>
-    <body>
+    <body id="search">
         <div class="container">
             <h1>This person?</h1>
             {% if find is empty %}
@@ -12,14 +12,17 @@
             {% else %}
             {% for name in find %}
             <ul>
-                <li>{{ name.getName }}</li>
-                <li>{{ name.getLast }}</li>
-                <li>{{ name.getAddress }}</li>
-                <li>{{ name.getPhone }}</li>
-                <li>{{ name.getEmail }}</li>
+                <li class=search>{{ name.getName }}</li>
+                <li class=search>{{ name.getLast }}</li>
+                <li class=search>{{ name.getAddress }}</li>
+                <li class=search>{{ name.getPhone }}</li>
+                <li class=search>{{ name.getEmail }}</li>
             </ul>
             {% endfor %}
             {% endif %}
+            <form action="/delete" method="post">
+                <button type="submit" name="button" class="btn">Clear Contacts</button>
+            </form>
             <a href='/'>Home</a>
         </div>
     </body>
