@@ -12,15 +12,15 @@
             {% else %}
             {% for name in find %}
             <ul>
-                <li class=search>{{ name.getName }}</li>
-                <li class=search>{{ name.getLast }}</li>
-                <li class=search>{{ name.getAddress }}</li>
-                <li class=search>{{ name.getPhone }}</li>
-                <li class=search>{{ name.getEmail }}</li>
+                <li class=search>First name: {{ name.getName }}</li>
+                <li class=search>Last name: {{ name.getLast }}</li>
+                <li class=search>Address: {{ name.getAddress }}</li>
+                <li class=search>Phone: {{ name.getPhone }}</li>
+                <li class=search>Email: {{ name.getEmail }}</li>
             </ul>
             {% endfor %}
-            {% endif %}    
-            <a href='/'>Home</a>
+            {% endif %}
+            <p id="search-home"><a href='/'>Home</a></p>
         </div>
     </body>
     </html>
