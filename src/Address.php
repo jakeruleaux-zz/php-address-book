@@ -5,16 +5,16 @@
         private $address;
         private $phone;
 
-        function __construct()
+        function __construct($contact_name, $contact_address, $contact_phone)
         {
-            $this->name;
-            $this->address;
-            $this->phone;
+            $this->name = $contact_name;
+            $this->address = $contact_address;
+            $this->phone = $contact_phone;
         }
 
         function setName($new_name)
         {
-            $this->name = $new_name
+            $this->name = $new_name;
         }
 
         function getName()
