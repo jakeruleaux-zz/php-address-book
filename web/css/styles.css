@@ -15,10 +15,13 @@
 
 #overlay {
     text-align: center;
-    background-color: rgba(121, 169, 247, 0.7);
-    z-index: 2;
+    text-shadow: rgb(255, 206, 236) 2px 2px;
 }
 
 .jumbotron {
     background-image: url("/../img/flower.jpg");
+}
+
+#list {
+    list-style: none;
 }
