@@ -1,5 +1,14 @@
-body {
+#delete {
     background-image: url("/../img/blank.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#delete-head {
+    text-align: center;
+}
+
+#delete-home {
+    text-align: center;
+    font-size: 16px;
 }
