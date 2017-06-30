@@ -1,5 +1,5 @@
 #delete {
-    background-image: url("/../img/blank.jpg");
+    background-image: url("/../img/ruled.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,4 +30,18 @@
 
 #list {
     list-style: none;
+}
+
+#create-new {
+    background-image: url("/../img/ruled.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.create-page {
+    font-size: 32px;
+}
+
+.form-group {
+    font-size: 24px;
 }
