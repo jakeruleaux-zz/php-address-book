@@ -2,8 +2,7 @@
     date_default_timezone_set('America/Los_Angeles');
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/Address.php";
-    use Symfony\Component\Debug\Debug;
-    Debug::enable();
+    
 
     session_start();
 
@@ -11,9 +10,10 @@
         $_SESSION['list_of_contacts'] = array();
     }
     $app = new Silex\Application();
-$app['debug'] = true;
+
     $app->register(new Silex\Provider\TwigServiceProvider(), array(
         'twig.path' => __DIR__.'/../views'
+
     ));
 
     $app->get("/", function() use ($app) {
@@ -29,9 +29,9 @@ $app['debug'] = true;
     $app->post("/delete", function() use ($app) {
        Contact::deleteAll();
        return $app['twig']->render('delete_contacts.html.twig');
-   });
+    });
 
-   $app->get("/search", function() use ($app) {
+    $app->get("/search", function() use ($app) {
        $finds = Contact::getAll();
        $finds_match_name = array();
 
@@ -45,7 +45,7 @@ $app['debug'] = true;
 
        return $app['twig']->render('search.html.twig', array('find' => $finds_match_name));
 
-   });
+    });
 
     return $app;
 ?>
