@@ -13,6 +13,12 @@
     font-size: 16px;
 }
 
+#cover {
+    background-image: url("/../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #home-page {
         background-image: url("/../img/ruled.jpg");
         background-repeat: no-repeat;

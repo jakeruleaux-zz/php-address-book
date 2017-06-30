@@ -28,5 +28,21 @@
        return $app['twig']->render('delete_contacts.html.twig');
    });
 
+   $app->get("/search", function() use ($app) {
+       $finds = Contact::getAll();
+       $finds_match_name = array();
+
+       if (empty($finds_match_name) == true) {
+           foreach ($finds as $find) {
+               if ($find->getName() == $_GET['search']) {
+                   array_push($finds_match_name, $find);
+               }
+           }
+       }
+
+       return $app['twig']->render('search.html.twig', array('find' => $finds_match_name));
+
+   });
+
     return $app;
 ?>

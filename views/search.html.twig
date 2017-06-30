@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+          <link rel="stylesheet" href="/../css/styles.css" type="text/css">
+        <title>Find them</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>This person?</h1>
+            {% if find is empty %}
+            <h1>Can't find them!</h1>
+            {% else %}
+            {% for name in find %}
+            <ul>
+                <li>{{ name.getName }}</li>
+                <li>{{ name.getLast }}</li>
+                <li>{{ name.getAddress }}</li>
+                <li>{{ name.getPhone }}</li>
+                <li>{{ name.getEmail }}</li>
+            </ul>
+            {% endfor %}
+            {% endif %}
+            <a href='/'>Home</a>
+        </div>
+    </body>
+    </html>
