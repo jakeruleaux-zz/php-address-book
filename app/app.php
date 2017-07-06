@@ -2,7 +2,7 @@
     date_default_timezone_set('America/Los_Angeles');
     require_once __DIR__."/../vendor/autoload.php";
     require_once __DIR__."/../src/Address.php";
-    
+
 
     session_start();
 
@@ -23,7 +23,7 @@
     $app->post("/create", function() use ($app) {
         $contact = new Contact($_POST['name'], $_POST['last'], $_POST['address'], $_POST['phone'], $_POST['email']);
         $contact->save();
-        return $app['twig']->render('create.html.twig', array('newcontact' => $contact));
+        return $app['twig']->render('create.html.twig', array('newContact' => $contact));
     });
 
     $app->post("/delete", function() use ($app) {

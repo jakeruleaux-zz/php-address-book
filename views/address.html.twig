@@ -28,7 +28,7 @@
         {% endif %}
         <form action='/search'>
           <label for="search">Look-up a Contact</label>
-          <input type="text" name="search" id="search">
+          <input type="text" name="search" id="search" required>
           <button type='submit'>Find</button>
         </form>
         <form action="/delete" method="post">
@@ -40,23 +40,23 @@
       <form action="/create" method="post">
         <div class="form-group">
           <label for="name">First name:</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" required>
         </div>
         <div class="form-group">
           <label for="last">Last name:</label>
-          <input type="text" name="last" id="last">
+          <input type="text" name="last" id="last" required>
         </div>
         <div class="form-group">
           <label for="address">address:</label>
-          <input type="text" name="address" id="address">
+          <input type="text" name="address" id="address" required>
         </div>
         <div class="form-group">
           <label for="phone">Phone:</label>
-          <input type="text" name="phone" id="phone">
+          <input type="text" name="phone" id="phone" required>
         </div>
         <div class="form-group">
           <label for="eamil">Email:</label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" required>
         </div>
         <button type="submit" name="button">Add Contact</button>
         </form>
